@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #333333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: #0056b3;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.layout {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 15px;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 60px;
+  border-left: 5px solid #0056b3;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  color: #0056b3;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  width: 75%;
+}
+
+.main-content section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: white;
+  border-left: 6px solid #ffcc00;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.course-list li {
+  background-color: #e6f0ff;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
